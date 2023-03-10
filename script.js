@@ -29,24 +29,29 @@ $(document).ready(function () {
       $("#goBack").hide(500);
     }
     // sticky-top section
-    // if($(document).scrollTop()<700 ){
-    //   $("#navLink1").addClass("text-primary");
-    //   $("#navLink2").removeClass("text-primary");
-    // }
-    // if($(document).scrollTop()>700 ){
-    //   $("#navLink2").addClass("text-primary");
-    //   $("#navLink1").removeClass("text-primary");
-    //   $("#navLink3").removeClass("text-primary");
-    // }
-    // if($(document).scrollTop()>1400 ){
-    //   $("#navLink3").addClass("text-primary");
-    //   $("#navLink2").removeClass("text-primary");
-    //   $("#navLink4").removeClass("text-primary");
-    // }
-    // if($(document).scrollTop()>2000 ){
-    //   $("#navLink4").addClass("text-primary");
-    //   $("#navLink3").removeClass("text-primary");
-    // }
+    if($(document).scrollTop()<700 ){
+      $("#navLink1").addClass("text-primary");
+      $("#navLink2").removeClass("text-primary");
+    }
+    if($(document).scrollTop()>700 ){
+      $("#navLink2").addClass("text-primary");
+      $("#navLink1").removeClass("text-primary");
+      $("#navLink3").removeClass("text-primary");
+    }
+    if($(document).scrollTop()>1400 ){
+      $("#navLink3").addClass("text-primary");
+      $("#navLink2").removeClass("text-primary");
+      $("#navLink4").removeClass("text-primary");
+    }
+    if($(document).scrollTop()>2000 ){
+      $("#navLink4").addClass("text-primary");
+      $("#navLink3").removeClass("text-primary");
+      $("#navLink5").removeClass("text-primary");
+    }
+    if($(document).scrollTop()>2700 ){
+      $("#navLink5").addClass("text-primary");
+      $("#navLink4").removeClass("text-primary");
+    }
   });
   $("#goBack").click(function (e) {
     $(document).scrollTop(0);
